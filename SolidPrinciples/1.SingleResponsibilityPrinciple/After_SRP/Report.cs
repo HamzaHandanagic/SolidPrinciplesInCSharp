@@ -1,4 +1,10 @@
-﻿namespace After_SRP
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace After_SRP
 {
     /// <summary>
     /// Report class only have responsibility of creating reports.

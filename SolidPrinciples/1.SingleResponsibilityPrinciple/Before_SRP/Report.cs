@@ -8,10 +8,10 @@
         public string Name { get; set; }
         public string Content { get; set; }
 
-        public void GenerateReport()
+        public string GenerateReport()
         {
-            Name = "Invoice Report";
-            Content = "Report Content";
+            var generatedReport = $"{Name}:{Content}";
+            return generatedReport;
         }
 
         public void SendReportByEmail(string recipient)
