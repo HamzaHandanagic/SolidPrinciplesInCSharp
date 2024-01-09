@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34407.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.SingleResponsibilityPrinciple", "1.SingleResponsibilityPrinciple", "{E846559B-029B-4E2E-AB54-E46CAB253249}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.OpenClosedPrinciple", "2.OpenClosedPrinciple", "{AD6F1D7D-0101-4ADD-89ED-9834148CD468}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.LiskovSubstitutionPrinciple", "3.LiskovSubstitutionPrinciple", "{DA0FEFA0-5B47-46B9-B173-8F1C0FDFCFB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.InterfaceSegregationPrinciple", "4.InterfaceSegregationPrinciple", "{589DF7AA-91AB-4AB6-A2FD-626F8DDFC3DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.DependencyInversionPrinciple", "5.DependencyInversionPrinciple", "{BD76DC55-80D9-46BD-A088-6E6FF746D746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before_SRP", "1.SingleResponsibilityPrinciple\Before_SRP\Before_SRP.csproj", "{84CDF13C-A2AE-4175-89FA-05B7774D1774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "After_SRP", "After_SRP\After_SRP.csproj", "{2238907E-4223-40E4-9833-62278B21A019}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84CDF13C-A2AE-4175-89FA-05B7774D1774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CDF13C-A2AE-4175-89FA-05B7774D1774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CDF13C-A2AE-4175-89FA-05B7774D1774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CDF13C-A2AE-4175-89FA-05B7774D1774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2238907E-4223-40E4-9833-62278B21A019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2238907E-4223-40E4-9833-62278B21A019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2238907E-4223-40E4-9833-62278B21A019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2238907E-4223-40E4-9833-62278B21A019}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84CDF13C-A2AE-4175-89FA-05B7774D1774} = {E846559B-029B-4E2E-AB54-E46CAB253249}
+		{2238907E-4223-40E4-9833-62278B21A019} = {E846559B-029B-4E2E-AB54-E46CAB253249}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75CEBC8D-ECE9-462F-AAF4-4C4C69A14B9C}
+	EndGlobalSection
+EndGlobal
