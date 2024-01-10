@@ -29,6 +29,8 @@ Not inherent to SRP but possible downsides of SRP: increased number of classes, 
 
 ## Open/Closed Principle (OCP)
 
+Definition: Software entities should be open for extension but closed for modification.
+
 The Open/Closed Principle (OCP), defined by Bertrand Meyer in 1988, states that software entities (such as classes, modules, methods) should be open for extension but closed for modification. You should be able to extend the behavior of a module without altering its source code. This principle promotes the use of abstraction and polymorphism to achieve flexibility and avoid modifying existing, working code.
 
 We should strive to write a code that doesn’t require modification every time a customer changes its request. It's OK to modify the functions/classes to do that, especially for simpler functions but as complexity grows Open/Closed Principle applied is useful. Less we need to change source of our code there is less chance to introduce new bugs to our code. If you want to add new functionality to your existing code and you have to modify it before you add the new functionality, then you are not following the open-closed principle. Code that is open for extension is usually abstract. There should be fine balance between concreteness and abstraction.
@@ -48,4 +50,20 @@ Tips: start concrete and then introduce abstraction. Implement new features in n
 Benefits: more maintainable, testable, flexible etc.
 
 Possible downsides: abstraction adds complexity, use of polymorphism and interfaces can introduce a slight runtime performance overhead compared to direct method calls...
+
+## Liskov Substitution Principle (LSP)
+
+Definition: Let q(x) be a property provable about objects x of type T. Then q(y) should be true for objects y of type S where S is a subtype of T.
+
+Simply put, the Liskov Substitution Principle (LSP) states that objects of a superclass should be replaceable with objects of its subclasses without breaking the application. We want is to have the objects of our subclasses behaving the same way as the objects of our superclass. 
+
+Inheritance is "IS-A" relationship e.g.: Eagle IS-a bird. Properties exhibits "HAS-A" relationships e.g: Address has a city. LSP states that the IS-A relationship is insufficient for Object Oriented Design and should be replaced with "IS-SUBSTITUTABLE-FOR" relationship. Example that is often being used is example with Rectangle and Square problem. Rectangle by definition has four sides and four right angles. Similary, square has four equal sides and four right angles. In geometry, a square is a rectangle.
+
+LSP is a subset of Polymorphism. 
+LSP says that you can not return new exceptions.  
+
+Covariance, Contravariance concepts: Covariance - if you have a return type that return type should not change. In C# this is already default behaviour. Contravariance is about input type, same as covariance.
+Preconditions, Postconditions concepts: Preconditions - you can not strenghten them. A subclass should not require more or stricter conditions for the method to work properly than its base class.  The postconditions of a base class method must not be weakened in a subclass. A subclass should meet at least the same postconditions as its base class, and it may strengthen them if necessary.
+
+
 
