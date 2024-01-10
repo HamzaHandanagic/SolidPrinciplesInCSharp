@@ -43,7 +43,7 @@ Different approaches to apply OCP:
 3. Composition and injection - don't place logic inside of a class but store it in another class that classes references (dependency injection). Logic for generating messages can be extracted in separate class called MessageService and then we inject that class into our main class.
 
 
-Tips: start concrete and then introduce abstraction, implement new features in new classes because nothing in the current system depends on newly created class.
+Tips: start concrete and then introduce abstraction. Implement new features in new classes because nothing in the current system depends on newly created class. Use abstraction and inheritance to create extensible designs. Leverage interfaces to define flexible contracts. Encapsulate varying behavior using design patterns, such as the Strategy Pattern.
 
 Benefits: more maintainable, testable, flexible etc.
 
