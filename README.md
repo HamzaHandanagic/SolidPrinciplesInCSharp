@@ -83,3 +83,11 @@ Signs that you are violating ISP in your code:
 - Classes Implementing Placeholder Methods.
 - Interfaces with Unrelated Methods.
 
+## Dependency Inversion Principle (DIP)
+
+Definition: High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details but details should depend on abstractions.
+
+How to tell if something depends on something else? There are 2 types of dependencies in C#: 1. Compile time 2. Runtime 
+
+Benefits: Decoupling, testability, reusability
+
