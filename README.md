@@ -59,11 +59,27 @@ Simply put, the Liskov Substitution Principle (LSP) states that objects of a sup
 
 Inheritance is "IS-A" relationship e.g.: Eagle IS-a bird. Properties exhibits "HAS-A" relationships e.g: Address has a city. LSP states that the IS-A relationship is insufficient for Object Oriented Design and should be replaced with "IS-SUBSTITUTABLE-FOR" relationship. Example that is often being used is example with Rectangle and Square problem. Rectangle by definition has four sides and four right angles. Similary, square has four equal sides and four right angles. In geometry, a square is a rectangle.
 
-LSP is a subset of Polymorphism. 
-LSP says that you can not return new exceptions.  
+LSP is a subset of Polymorphism. LSP says that you can not return new exceptions.  
 
 Covariance, Contravariance concepts: Covariance - if you have a return type that return type should not change. In C# this is already default behaviour. Contravariance is about input type, same as covariance.
 Preconditions, Postconditions concepts: Preconditions - you can not strenghten them. A subclass should not require more or stricter conditions for the method to work properly than its base class.  The postconditions of a base class method must not be weakened in a subclass. A subclass should meet at least the same postconditions as its base class, and it may strengthen them if necessary.
 
+## Interface Segregation Principle (ISP)
 
+Definition: Clients should not be forced to depend on methods they do not use.
+
+Client can be defined as the code that is interacting with an instance of the interface. It's a calling code. Interfaces should be small, cohesive. In C#, interfaces are contracts that define the properties, methods, and events that classes or structs must implement. They provide a way to achieve abstraction and define a blueprint for a group of related capabilities.
+
+When developing a new feature, we create an interface based on the initial code. If a similar feature is requested later, implemented through the same interface but with fewer required methods, Interface Segregation Principle (ISP) ensures we only implement the necessary methods, addressing the problem of unnecessary method implementation. Basically, the ISP states that we should reduce code objects down to the smallest required implementation thus creating interfaces with only required declarations. 
+
+As a result, an interface that has a lot of different declarations should be split up into smaller interfaces. To break up large interfaces we can use interface inheritance or Adapter design pattern. The Adapter Pattern is a structural design pattern that allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces by wrapping the interface of a class into another interface that a client expects. There is Adapter class and Adaptee class. Adapter is recognizable by a constructor which takes an instance of a different abstract/interface type. 
+
+ISP benefits: maintability, reduced code complexity, easier testing, flexibility, following ISP helps with SRP and LSP.
+
+Signs that you are violating ISP in your code: 
+- Large Interfaces,
+- If there are NotImplementedExceptions that is telling you that interface is bigger than some of your clients needed.
+- Difficulty in Extending Functionality - if adding a new feature requires changes to multiple classes due to the shared nature of interfaces.
+- Classes Implementing Placeholder Methods.
+- Interfaces with Unrelated Methods.
 
