@@ -13,17 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.InterfaceSegregationPrinc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.DependencyInversionPrinciple", "5.DependencyInversionPrinciple", "{BD76DC55-80D9-46BD-A088-6E6FF746D746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before_SRP", "1.SingleResponsibilityPrinciple\Before_SRP\Before_SRP.csproj", "{84CDF13C-A2AE-4175-89FA-05B7774D1774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Before_SRP", "1.SingleResponsibilityPrinciple\Before_SRP\Before_SRP.csproj", "{84CDF13C-A2AE-4175-89FA-05B7774D1774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "After_SRP", "1.SingleResponsibilityPrinciple\After_SRP\After_SRP.csproj", "{0509DA53-43C0-452E-AAE7-1C0536819E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "After_SRP", "1.SingleResponsibilityPrinciple\After_SRP\After_SRP.csproj", "{0509DA53-43C0-452E-AAE7-1C0536819E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before_OCP", "2.OpenClosedPrinciple\Before_OCP\Before_OCP.csproj", "{F233F7C4-1EF9-411E-BCBC-C0A278D31FF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Before_OCP", "2.OpenClosedPrinciple\Before_OCP\Before_OCP.csproj", "{F233F7C4-1EF9-411E-BCBC-C0A278D31FF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "After_OCP", "2.OpenClosedPrinciple\After_OCP\After_OCP.csproj", "{C67BD96D-3583-44DC-8EEA-0AE64ABE9C48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "After_OCP", "2.OpenClosedPrinciple\After_OCP\After_OCP.csproj", "{C67BD96D-3583-44DC-8EEA-0AE64ABE9C48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before_LSP", "3.LiskovSubstitutePrinciple\Before_LSP\Before_LSP.csproj", "{1529E347-3BDC-4FD4-9877-A6B8E9AC4BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Before_LSP", "3.LiskovSubstitutePrinciple\Before_LSP\Before_LSP.csproj", "{1529E347-3BDC-4FD4-9877-A6B8E9AC4BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "After_LSP", "3.LiskovSubstitutePrinciple\After_LSP\After_LSP.csproj", "{B4BC4B25-B217-4C13-AC71-D9B1CE15472E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "After_LSP", "3.LiskovSubstitutePrinciple\After_LSP\After_LSP.csproj", "{B4BC4B25-B217-4C13-AC71-D9B1CE15472E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before_ISP", "4.InterfaceSegregationPrinciple\Before_ISP\Before_ISP.csproj", "{97D3703F-0563-4BDA-988C-ED8E53E36F36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "After_ISP", "4.InterfaceSegregationPrinciple\After_ISP\After_ISP.csproj", "{25FC3635-075E-4A9D-B67F-DE3389E7D79E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,14 @@ Global
 		{B4BC4B25-B217-4C13-AC71-D9B1CE15472E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4BC4B25-B217-4C13-AC71-D9B1CE15472E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4BC4B25-B217-4C13-AC71-D9B1CE15472E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D3703F-0563-4BDA-988C-ED8E53E36F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D3703F-0563-4BDA-988C-ED8E53E36F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D3703F-0563-4BDA-988C-ED8E53E36F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D3703F-0563-4BDA-988C-ED8E53E36F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25FC3635-075E-4A9D-B67F-DE3389E7D79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25FC3635-075E-4A9D-B67F-DE3389E7D79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25FC3635-075E-4A9D-B67F-DE3389E7D79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25FC3635-075E-4A9D-B67F-DE3389E7D79E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +78,8 @@ Global
 		{C67BD96D-3583-44DC-8EEA-0AE64ABE9C48} = {AD6F1D7D-0101-4ADD-89ED-9834148CD468}
 		{1529E347-3BDC-4FD4-9877-A6B8E9AC4BD9} = {DA0FEFA0-5B47-46B9-B173-8F1C0FDFCFB3}
 		{B4BC4B25-B217-4C13-AC71-D9B1CE15472E} = {DA0FEFA0-5B47-46B9-B173-8F1C0FDFCFB3}
+		{97D3703F-0563-4BDA-988C-ED8E53E36F36} = {589DF7AA-91AB-4AB6-A2FD-626F8DDFC3DA}
+		{25FC3635-075E-4A9D-B67F-DE3389E7D79E} = {589DF7AA-91AB-4AB6-A2FD-626F8DDFC3DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75CEBC8D-ECE9-462F-AAF4-4C4C69A14B9C}
