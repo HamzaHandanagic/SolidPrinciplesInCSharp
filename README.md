@@ -85,9 +85,19 @@ Signs that you are violating ISP in your code:
 
 ## Dependency Inversion Principle (DIP)
 
-Definition: High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details but details should depend on abstractions.
+Definition: High-level modules should not depend on low-level modules. Both should depend on abstractions. Also, abstractions should not depend on details but details should depend on abstractions.
 
-How to tell if something depends on something else? There are 2 types of dependencies in C#: 1. Compile time 2. Runtime 
+The basic idea behind the Dependency Inversion Principle is that we should create the higher-level modules with its complex logic in such a way to be reusable and unaffected by any change from the lower-level modules in our application. Abstractions describe "what": e.g.: send a message, store a customer record. Details specify "how": Send an SMTP email over port 25, serialize Customer to JSON and store in a text file etc. Changing already implemented modules is risky. By depending on abstraction and not on a concrete implementation, we can reduce that risk by not having to change high-level modules in our project.
 
-Benefits: Decoupling, testability, reusability
+How to tell if something depends on something else? There are 2 types of dependencies in C#: 
+1. Compile time
+2. Runtime
+
+Without abstraction compile time and runtime control flow will be the same. With abstractions, dependencies at compile time are inverted. Classes depend on new interfaces. Dependency Inversion Principle goes hand in hand with one way of implementing DIP and that is Dependency Injection. With DI you don't create your own dependecies, request dependencies from client, inject dependecies in form of: constructor arguments, properties, method arguments. Constructor injection is preffered because it follows explicit dependencies principle, classes are never in uninitialized state, can leverage an IOC container to construct types and their dependencies. Dependency Injection can be viewed as implementation of Strategy Pattern.
+
+Dependency Inversion principle mostly has to do with compile time dependencies. It's important to set up properly solution to follow DIP. There are low level dependencies like: database, file system, email, configuration etc. These dependecies are harder to isolate in testing and usually they can be problematic. There are some rules that can be followed to eliminate problems like: classes should explicitly expose dependencies through constructor. In this case we don't surprise class clients with it. The high-level modules describe those operations in our application that have more abstract nature and contain more complex logic. These modules orchestrate low-level modules in our application. 
+
+Tips: most classes should depenend on abstractions not implementation details. Abstractions should not leak details. Clients should inject dependencies when they create other classes. Our solution should be structured in a way to leverage dependency inversion.
+
+Benefits: decoupling, testability, reusability, stability at the level of architecture of our application. Modularity and reusability of the application modules.
 
