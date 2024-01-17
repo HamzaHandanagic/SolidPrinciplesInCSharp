@@ -57,7 +57,7 @@ Definition: Let q(x) be a property provable about objects x of type T. Then q(y)
 
 Simply put, the Liskov Substitution Principle (LSP) states that objects of a superclass should be replaceable with objects of its subclasses without breaking the application. We want is to have the objects of our subclasses behaving the same way as the objects of our superclass. 
 
-Inheritance is "IS-A" relationship e.g.: Eagle IS-a bird. Properties exhibits "HAS-A" relationships e.g: Address has a city. LSP states that the IS-A relationship is insufficient for Object Oriented Design and should be replaced with "IS-SUBSTITUTABLE-FOR" relationship. Example that is often being used is example with Rectangle and Square problem. Rectangle by definition has four sides and four right angles. Similary, square has four equal sides and four right angles. In geometry, a square is a rectangle.
+Inheritance is "IS-A" relationship e.g.: Eagle IS-a bird. Properties exhibits "HAS-A" relationships e.g: Address has a city. LSP states that the IS-A relationship is insufficient for Object Oriented Design and should be replaced with "IS-SUBSTITUTABLE-FOR" relationship. Example that is often being used is example with Rectangle and Square problem. Rectangle by definition has four sides and four right angles. Similary, square has four equal sides and four right angles. In geometry, a square is a rectangle but it can not replace rectangle because square has all four sides the same.
 
 LSP is a subset of Polymorphism. LSP says that you can not return new exceptions.  
 
