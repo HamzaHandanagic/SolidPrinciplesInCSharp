@@ -19,7 +19,7 @@ In context of C#: individual classes define what the application does. A class s
 The first thing we need to do is to separate the part of our code that is unlike others. We are trying to accomplish only one task in our class, they have become free of clutter and simple to read.
 Single Responsibility Principle is closely related to the idea of coupling. Tight coupling should be avoided. Tight coupling means that something is binded together in a way that's difficult to change. SRP should move our code closer to loose coupling and separation of concerns.
 Loose coupling - modular way to combine different modules.
-Separation of Concerns - programs should be separated into distinct sections each addressing a spearate concern.
+Separation of Concerns - programs should be separated into distinct sections each addressing a separate concern.
 
 
 
